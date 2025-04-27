@@ -1,7 +1,7 @@
 {
   "name": "presentee",
   "version": "1.0.0",
-  "description": "This tool allow users to highlight while presenting",
+  "description": "This tool allows users to highlight while presenting",
   "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -10,7 +10,30 @@
   },
   "keywords": [],
   "author": "NadSoft",
-  "license": "ISC",
+  "license": "MIT",
+  "build": {
+    "appId": "com.nadun.presentee",
+    "productName": "Presentee",
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "icon": "public/icon.icns",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "icon": "public/icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "linux": {
+      "icon": "public/icon.png"
+    }
+  },
   "devDependencies": {
     "@electron-forge/cli": "^7.8.0",
     "@electron-forge/maker-deb": "^7.8.0",
