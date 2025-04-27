@@ -43,7 +43,7 @@ Getting started with **Presentee** is a breeze! Follow the steps below to instal
 
 ## 📸 **Screenshots**
 
-![Highlight Example](screenshots/Screenshot-1.png.png)
+![Highlight Example](screenshots/Screenshot-1.png)
 
 ## ⚙️ **Development**
 
