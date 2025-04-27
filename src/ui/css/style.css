@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: transparent;
+  overflow: hidden;
+  user-select: none;
+  cursor: default;
+}
+
+.highlight-box {
+  position: absolute;
+  border: 3px dashed #4a90e2;
+  /* border-image: linear-gradient(45deg, #ff00cc, #3333ff) 1; */
+  border-radius: 25px !important;
+  pointer-events: none;
+  animation: fade-out attr(fade-time) ease forwards;
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrow {
+  font-size: 2rem;
+  position: absolute;
+  cursor: grab;
+  display: none;
+  user-select: none;
+  transition: transform 0.1s ease;
+  transform-origin: center;
+}
+
+.arrow:active {
+  cursor: grabbing;
+}
